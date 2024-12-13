@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD855189-4EC3-4D94-8305-CE02B0E98ED1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SS_OpenCV</RootNamespace>
+    <AssemblyName>SS_OpenCV</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emgu.CV, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI, Version=3.2.0.2682, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="SS_Eval, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SS_Eval.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorsForm.Designer.cs">
+      <DependentUpon>AuthorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Histogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Histogram.Designer.cs">
+      <DependentUpon>Histogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistogramAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistogramAll.Designer.cs">
+      <DependentUpon>HistogramAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistogramRGB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistogramRGB.Designer.cs">
+      <DependentUpon>HistogramRGB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistogramWhiteX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistogramWhiteX.Designer.cs">
+      <DependentUpon>HistogramWhiteX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistogramWhiteY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistogramWhiteY.Designer.cs">
+      <DependentUpon>HistogramWhiteY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageClass.cs" />
+    <Compile Include="InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputBox.designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AuthorsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AuthorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Histogram.resx">
+      <DependentUpon>Histogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistogramAll.resx">
+      <DependentUpon>HistogramAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistogramRGB.resx">
+      <DependentUpon>HistogramRGB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistogramWhiteX.resx">
+      <DependentUpon>HistogramWhiteX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistogramWhiteY.resx">
+      <DependentUpon>HistogramWhiteY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="bin\Debug\SS_files.csv" />
+    <None Include="bin\Debug\SS_OpenCV.exe.config" />
+    <None Include="bin\Debug\SS_OpenCV.vshost.exe.config" />
+    <None Include="bin\Debug\SS_OpenCV.vshost.exe.manifest" />
+    <None Include="bin\Debug\SS_operations.csv" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_FCT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll" />
+    <Content Include="bin\Debug\Emgu.CV.dll" />
+    <Content Include="bin\Debug\Emgu.CV.GPU.dll" />
+    <Content Include="bin\Debug\Emgu.CV.GPU.xml" />
+    <Content Include="bin\Debug\Emgu.CV.License.txt" />
+    <Content Include="bin\Debug\Emgu.CV.ML.dll" />
+    <Content Include="bin\Debug\Emgu.CV.ML.xml" />
+    <Content Include="bin\Debug\Emgu.CV.OCR.dll" />
+    <Content Include="bin\Debug\Emgu.CV.OCR.xml" />
+    <Content Include="bin\Debug\Emgu.CV.OpenCL.dll" />
+    <Content Include="bin\Debug\Emgu.CV.OpenCL.xml" />
+    <Content Include="bin\Debug\Emgu.CV.Stitching.dll" />
+    <Content Include="bin\Debug\Emgu.CV.Stitching.xml" />
+    <Content Include="bin\Debug\Emgu.CV.UI.dll" />
+    <Content Include="bin\Debug\Emgu.CV.VideoStab.dll" />
+    <Content Include="bin\Debug\Emgu.CV.VideoStab.xml" />
+    <Content Include="bin\Debug\Emgu.Util.dll" />
+    <Content Include="bin\Debug\Forms.dll" />
+    <Content Include="bin\Debug\Forms.pdb" />
+    <Content Include="bin\Debug\haarcascade_eye.xml" />
+    <Content Include="bin\Debug\haarcascade_frontalface_default.xml" />
+    <Content Include="bin\Debug\SS_description.txt" />
+    <Content Include="bin\Debug\SS_Eval.dll" />
+    <Content Include="bin\Debug\SS_Eval.pdb" />
+    <Content Include="bin\Debug\SS_OpenCV.exe" />
+    <Content Include="bin\Debug\SS_OpenCV.pdb" />
+    <Content Include="bin\Debug\SS_OpenCV.vshost.exe" />
+    <Content Include="bin\Debug\x86\concrt140.dll" />
+    <Content Include="bin\Debug\x86\cvextern.dll" />
+    <Content Include="bin\Debug\x86\msvcp140.dll" />
+    <Content Include="bin\Debug\x86\OpenCL.dll" />
+    <Content Include="bin\Debug\x86\opencv_calib3d2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_contrib2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_core2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_features2d2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_ffmpeg320.dll" />
+    <Content Include="bin\Debug\x86\opencv_flann2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_gpu2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_highgui2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_imgproc2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_legacy2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_ml2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_nonfree2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_objdetect2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_photo2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_stitching2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_superres2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_video2410.dll" />
+    <Content Include="bin\Debug\x86\opencv_videostab2410.dll" />
+    <Content Include="bin\Debug\x86\vcruntime140.dll" />
+    <Content Include="bin\Debug\ZedGraph.dll" />
+    <Content Include="bin\Debug\ZedGraph.license.txt" />
+    <Content Include="obj\OpenCV_Work.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\SS_OpenCV.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
